@@ -15,17 +15,10 @@ class ProductManager{
      else product.id = this.getProducts().length + 1; this.products.push(product)
   }
 
-  existProduct(product){
-    return (this.getProducts().find( actual => product.code == actual.code) !== undefined)
-  }
-
-  getProductById(id){
-    let product = this.getProducts().find( actual => id == actual.id);
-
-    if (product !== undefined) return product;
-
-    throw 'El producto con id ' + id + ' no existe entre los disponibles';
-  }
+  // getProductById(product) {
+    // if (this.getProducts().find((p) => p.id == product.id)) return console.log(`Product with id ${product.id} already exists!$`)
+    //  else product.code = this.getProducts().length + 1; this.products.push(product)
+  // } 
  
 }
 
